@@ -1,0 +1,44 @@
+<html>
+<style>
+body{background-image:url(adminback.jpg)}
+h2{text-align:center;margin-top:100px;font-size:30px;margin-left:80px;color:white}
+img{float:left;margin-left:200px;margin-top:-80px}
+th{text-align:centre;font-size:25px;margin-top:-100px;color:white}
+a{font-family:arial;color:white;text-decoration:none}
+td.menu{font-size:100%;font-family:Helvetica Neue;}
+table.menu
+{
+text-align:center;
+position:absolute;
+visibility:hidden;
+background-image:url('background2.jpg');
+}
+</style>
+<script>
+function showmenu(elmnt)
+{
+document.getElementById(elmnt).style.visibility="visible";
+}
+function hidemenu(elmnt)
+{
+document.getElementById(elmnt).style.visibility="hidden";
+}
+</script>
+<body>
+<h2><b>MALAVIYA NATIONAL INSTITUTE OF TECHNOLOGY</b></h2>
+<img src="mnit_logo.png">
+<table  class="main" border="1"style="background-image:url('background2.jpg');margin-left:300px;margin-right:90px;margin-top:50px;font-size:25px;border-collapse:collapse;height:70px;width:800px ">
+<td><a href="admin_home.html"><pre>  Home  </pre></a></td>
+<th><a href="student_hm.php"><pre>  Students  </pre></a></th>
+<th><a href="faculty_hm.php"><pre>  Faculty  </pre></a></th>
+ <td onmouseover="showmenu(&#39;sell&#39;)" onmouseout="hidemenu(&#39;sell&#39;)" style="text-align:center";width="130px">
+   <a href="">Notice</a><br>
+   <table class="menu" id="sell">
+   <tr style="text-align:center";width="230px"><td class="menu"><a href="">From Faculty</a></td></tr>
+   <tr><td class="menu" style="text-align:center";width="130px"><a href="">From Admin</a></td></tr>
+   </table>
+  </td>
+<th><a href="1.html"><pre>  Log Out  </pre></a></th>
+</table>
+</body>
+</html>
